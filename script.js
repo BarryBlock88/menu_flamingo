@@ -9,3 +9,13 @@ function filterMenu(category) {
         }
     });
 }
+
+// Function to show/hide information box on hover
+function showInfo(itemId, show) {
+    var infoBox = document.getElementById(itemId + '-info');
+    if (show) {
+        infoBox.style.display = 'block';
+    } else {
+        infoBox.style.display = 'none';
+    }
+}

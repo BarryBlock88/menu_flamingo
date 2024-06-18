@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Restaurant Menu</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="menu">
+            <div class="container">
+                <h2>Menu</h2>
+                
+                <!-- Dropdown menu for categories -->
+                <div class="dropdown">
+                    <button class="dropbtn">Select Category</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="filterMenu('all')">All</a>
+                        <a href="#" onclick="filterMenu('appetizers')">Appetizers</a>
+                        <a href="#" onclick="filterMenu('main-courses')">Main Courses</a>
+                        <a href="#" onclick="filterMenu('desserts')">Desserts</a>
+                    </div>
+                </div>
+                
+                <!-- Menu items divided by categories -->
+                <div id="appetizers" class="menu-item">
+                    <h3>Appetizers</h3>
+                    <ul>
+                        <li>Caprese Salad - $8</li>
+                        <li>Garlic Bread - $5</li>
+                        <li>Bruschetta - $7</li>
+                    </ul>
+                </div>
+                <div id="main-courses" class="menu-item">
+                    <h3>Main Courses</h3>
+                    <ul>
+                        <li>Spaghetti Bolognese - $15</li>
+                        <li>Grilled Salmon - $18</li>
+                        <li>Chicken Alfredo - $16</li>
+                    </ul>
+                </div>
+                <div id="desserts" class="menu-item">
+                    <h3>Desserts</h3>
+                    <ul>
+                        <li>Tiramisu - $7</li>
+                        <li>Cheesecake - $6</li>
+                        <li>Chocolate Mousse - $6</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Restaurant Menu. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

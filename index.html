@@ -31,35 +31,44 @@
                 </div>
                 
                 <!-- Menu items divided by categories -->
-                <div id="appetizers" class="menu-item">
+                <div id="appetizers" class="menu-item" onmouseover="showInfo('caprese', true)" onmouseout="showInfo('caprese', false)">
                     <h3>Appetizers</h3>
                     <ul>
                         <li>Caprese Salad - $8</li>
                         <li>Garlic Bread - $5</li>
                         <li>Bruschetta - $7</li>
                     </ul>
+                    <div id="caprese-info" class="info-box">
+                        <p>A fresh salad with tomatoes, mozzarella, basil, and balsamic glaze.</p>
+                    </div>
                 </div>
-                <div id="main-courses" class="menu-item">
+                <div id="main-courses" class="menu-item" onmouseover="showInfo('spaghetti', true)" onmouseout="showInfo('spaghetti', false)">
                     <h3>Main Courses</h3>
                     <ul>
                         <li>Spaghetti Bolognese - $15</li>
                         <li>Grilled Salmon - $18</li>
                         <li>Chicken Alfredo - $16</li>
                     </ul>
+                    <div id="spaghetti-info" class="info-box">
+                        <p>Traditional Italian pasta with meat sauce, topped with Parmesan cheese.</p>
+                    </div>
                 </div>
-                <div id="desserts" class="menu-item">
+                <div id="desserts" class="menu-item" onmouseover="showInfo('tiramisu', true)" onmouseout="showInfo('tiramisu', false)">
                     <h3>Desserts</h3>
                     <ul>
                         <li>Tiramisu - $7</li>
                         <li>Cheesecake - $6</li>
                         <li>Chocolate Mousse - $6</li>
                     </ul>
+                    <div id="tiramisu-info" class="info-box">
+                        <p>A classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Restaurant Menu. All rights reserved.</p>
         </div>
